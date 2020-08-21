@@ -48,6 +48,7 @@ func NewLDBDatabase(file string) (*LDBDatabase, error) {
 	if err != nil {
 		return nil, err
 	}
+	
 	return &LDBDatabase{
 		fn: file,
 		db: db,
